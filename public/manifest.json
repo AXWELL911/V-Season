@@ -2,17 +2,17 @@
     "short_name": "The Season",
     "name": "Check Seasons",
     "icons": [{
-            "src": "rain.png",
+            "src": "sky.png",
             "sizes": "64x64 32x32 24x24 16x16",
             "type": "image/x-icon"
         },
         {
-            "src": "rain.png",
+            "src": "sky.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "rain.png",
+            "src": "sky.png",
             "type": "image/png",
             "sizes": "512x512"
         }
