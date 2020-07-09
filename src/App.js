@@ -8,14 +8,14 @@ import API from './API';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { lat: null, lon: null };
+    this.state = { lat: -75, lon: null };
   }
-  componentDidMount() {
-    window.navigator.geolocation.getCurrentPosition(
-      (p) => this.setState({ lat: p.coords.latitude, lon: p.coords.longitude }),
-      (err) => console.log(err)
-    );
-  }
+//   componentDidMount() {
+//     window.navigator.geolocation.getCurrentPosition(
+//       (p) => this.setState({ lat: p.coords.latitude, lon: p.coords.longitude }),
+//       (err) => console.log(err)
+//     );
+//   }
 
  async componentDidUpdate(prevProps, prevState) {
     if (prevState !== this.state) {
@@ -29,7 +29,6 @@ class App extends Component {
         },
       });
 
-      console.log(response.data);
     }
   }
 
